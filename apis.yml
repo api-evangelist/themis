@@ -1,7 +1,30 @@
 aid: themis
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/themis.png
 name: Themis
-description: Themis is a company surfaced as a portfolio company of felicis and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Themis (askthemis.com) is a governance, risk, and compliance (GRC) SaaS
+  platform positioned as a "compliance collaboration" tool that streamlines
+  partnerships between companies and their vendors, banks, credit unions, and
+  fintechs by accelerating onboarding, due diligence, and risk assessments. The
+  platform bundles modules for policies, procedures, documents, vendor and risk
+  management, risk register, control mapping, issue and change management,
+  complaints, QA testing, training, audit, key risk indicators (KRI),
+  FINRA 4530, and conflicts of interest. Themis serves banking, payments,
+  lending, crypto/DeFi, exchanges, BaaS, and credit-card sectors, and is used
+  through a hosted web application at portal.askthemis.com. As of this
+  enrichment pass it exposes no public or developer API surface. Themis is a
+  portfolio company of Felicis.
 url: https://raw.githubusercontent.com/api-evangelist/themis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +32,24 @@ x-backed-by:
 - felicis
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Compliance
+- Governance Risk Compliance
+- Risk Management
+- Vendor Management
+- Audit
+- Fintech
+- Banking
+- Regulatory Technology
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +57,19 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/themis-domain-security.yml
+- type: Conformance
+  url: conformance/themis-conformance.yml
+- type: Compliance
+  url: https://themis.com/
+- type: TermsOfService
+  url: https://themis.com/terms-of-service
+- type: PrivacyPolicy
+  url: https://themis.com/privacy-policy
+- type: Login
+  url: https://portal.askthemis.com/login
+- type: Support
+  url: https://themis.com/contact
 - type: Website
   url: https://themis.com

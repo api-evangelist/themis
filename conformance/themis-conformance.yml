@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: https://themis.com/
+note: >-
+  Themis is a governance, risk & compliance (GRC) SaaS platform with a
+  login-only application (portal.askthemis.com) and no public/developer API
+  surface at the time of enrichment. No OpenAPI/AsyncAPI/GraphQL spec was
+  discoverable, so cross-cutting API standards cannot be derived. The one
+  published compliance posture is the SOC 2 certification badge shown on the
+  homepage.
+standards:
+- id: soc2
+  conforms: true
+  evidence: AICPA SOC 2 certification badge published on the Themis homepage
+- id: oauth2
+  conforms: false
+- id: oidc
+  conforms: false
+- id: rfc9457-problem-details
+  conforms: false
+certifications:
+- SOC 2
